@@ -32,34 +32,34 @@ const Skills = () => {
 
   return (
     <div className="min-h-screen my-20 mx-12 py-20 px-4 bg-[#000300]" id="skills">
-        <div className="max-w-[1000px] mx-auto" >
-            <h2 className="text-2xl font-semibold text-center text-white mb-8">
-                Professional <span className="text-[#89CFF0]">Skillset</span>
-            </h2>
+      <div className="max-w-[1000px] mx-auto">
+        <h2 className="text-2xl font-semibold text-center text-white mb-8">
+          Professional <span className="text-[#89CFF0]">Skillset</span>
+        </h2>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
-                {skills.map((skill, index) => (
-                <div
-                    key={index}
-                    className="relative flex items-center bg-transparent border-2 border-[#89CFF0] rounded-lg p-6 shadow-lg group shadow-[0_0px_10px_0_rgba(137,207,240,0.7)]"
-                    onMouseEnter={() => setHoveredSkill(index)}
-                    onMouseLeave={() => setHoveredSkill(null)}
-                >
-                    <img
-                    src={skill.imgSrc}
-                    alt={skill.alt}
-                    className="w-8 h-8"
-                    />
-                    <div className="ml-4">
-                    <p className="text-xl font-medium text-white">{skill.name}</p>
-                    {hoveredSkill === index && (
-                        <p className="text-sm font-medium text-[#89CFF0] text-opacity-60 tracking-wider">{skill.level}</p>
-                    )}
-                    </div>
-                </div>
-                ))}
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+          {skills.map((skill, index) => (
+            <div
+              key={index}
+              className="relative flex items-center bg-transparent border-2 border-[#89CFF0] rounded-lg p-6 shadow-[0_0px_10px_0_rgba(137,207,240,0.7)] group"
+              onMouseEnter={() => setHoveredSkill(index)}
+              onMouseLeave={() => setHoveredSkill(null)}
+            >
+              <img
+                src={skill.imgSrc}
+                alt={skill.alt}
+                className="w-8 h-8"
+              />
+              <div className="ml-4">
+                <p className="text-xl font-medium text-white">{skill.name}</p>
+                {hoveredSkill === index && (
+                  <p className="text-sm font-medium text-[#89CFF0] text-opacity-60 tracking-wider">{skill.level}</p>
+                )}
+              </div>
             </div>
+          ))}
         </div>
+      </div>
     </div>
   );
 };

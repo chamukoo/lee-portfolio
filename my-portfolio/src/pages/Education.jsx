@@ -2,14 +2,14 @@ import React from "react";
 import { VerticalTimeline, VerticalTimelineElement } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 
-import pup from "../assets/images/pup-logo.png"; // Adjust the path as necessary
+import pup from "../assets/images/pup-logo.png"; 
 import olfu from "../assets/images/olfu-logo.png";
 import mnhs from "../assets/images/mnhs-logo.png";
 import sja from "../assets/images/sja-logo.png";
 import tcmes from "../assets/images/tcmes-logo.png";
 
 const Education = () => {
-  const lineColor = "#89CFF0"; // Static color since dark mode is removed
+  const lineColor = "#89CFF0"; 
 
   return (
     <div className="min-h-screen my-20 bg-[#000300]" id="education">
@@ -19,19 +19,19 @@ const Education = () => {
         </h2>
         <VerticalTimeline lineColor="#fff">
           <VerticalTimelineElement
-            date={"S.Y. 2021-2024"}
+            date={<span style={{ color: '#89CFF0', fontSize: '14px', textAlign: 'center', display: 'block' }}>S.Y. 2021 - Present</span>}
             contentStyle={{
               boxShadow: `0px 0px 6px ${lineColor}`,
-              backgroundColor: "transparent", // No background color
+              backgroundColor: "transparent",
               border: `4px solid ${lineColor}`,
               borderRadius: "20px",
               textAlign: "center",
-              color: "#fff", // White text
+              color: "#fff", 
             }}
             contentArrowStyle={{ borderRight: `16px solid ${lineColor}` }}
             iconStyle={{
               backgroundColor: "#f9fafb",
-              borderRadius: "50%", // Circular icon
+              borderRadius: "50%", 
               display: "flex",
               justifyContent: "center",
               alignItems: "center",
@@ -45,19 +45,20 @@ const Education = () => {
           </VerticalTimelineElement>
 
           <VerticalTimelineElement
-            date={"S.Y. 2019-2021"}
+            date={<span style={{ color: '#89CFF0', fontSize: '14px', textAlign: 'center', display: 'block' }}>S.Y. 20219 - 2021</span>}
+
             contentStyle={{
               boxShadow: `0px 0px 6px ${lineColor}`,
-              backgroundColor: "transparent", // No background color
+              backgroundColor: "transparent", 
               border: `4px solid ${lineColor}`,
               borderRadius: "20px",
               textAlign: "center",
-              color: "#fff", // White text
+              color: "#fff", 
             }}
             contentArrowStyle={{ borderRight: `16px solid ${lineColor}` }}
             iconStyle={{
               backgroundColor: "#f9fafb",
-              borderRadius: "50%", // Circular icon
+              borderRadius: "50%", 
               display: "flex",
               justifyContent: "center",
               alignItems: "center",
@@ -71,19 +72,19 @@ const Education = () => {
           </VerticalTimelineElement>
 
           <VerticalTimelineElement
-            date={"S.Y. 2018-2019"}
+            date={<span style={{ color: '#89CFF0', fontSize: '14px', textAlign: 'center', display: 'block' }}>S.Y. 20218 - 2019</span>}
             contentStyle={{
               boxShadow: `0px 0px 6px ${lineColor}`,
-              backgroundColor: "transparent", // No background color
+              backgroundColor: "transparent", 
               border: `4px solid ${lineColor}`,
               borderRadius: "20px",
               textAlign: "center",
-              color: "#fff", // White text
+              color: "#fff", 
             }}
             contentArrowStyle={{ borderRight: `16px solid ${lineColor}` }}
             iconStyle={{
               backgroundColor: "#f9fafb",
-              borderRadius: "50%", // Circular icon
+              borderRadius: "50%", 
               display: "flex",
               justifyContent: "center",
               alignItems: "center",
@@ -97,19 +98,19 @@ const Education = () => {
           </VerticalTimelineElement>
 
           <VerticalTimelineElement
-            date={"S.Y. 2015-2018"}
+            date={<span style={{ color: '#89CFF0', fontSize: '14px', textAlign: 'center', display: 'block' }}>S.Y. 2015 - 2018</span>}
             contentStyle={{
               boxShadow: `0px 0px 6px ${lineColor}`,
               backgroundColor: "transparent", 
               border: `4px solid ${lineColor}`,
               borderRadius: "20px",
               textAlign: "center",
-              color: "#fff", // White text
+              color: "#fff",
             }}
             contentArrowStyle={{ borderRight: `16px solid ${lineColor}` }}
             iconStyle={{
               backgroundColor: "#f9fafb",
-              borderRadius: "50%", // Circular icon
+              borderRadius: "50%",
               display: "flex",
               justifyContent: "center",
               alignItems: "center",
@@ -123,19 +124,19 @@ const Education = () => {
           </VerticalTimelineElement>
 
           <VerticalTimelineElement
-            date={"S.Y. 2009-2015"}
+            date={<span style={{ color: '#89CFF0', fontSize: '14px', textAlign: 'center', display: 'block' }}>S.Y. 2009 - 2015</span>}
             contentStyle={{
               boxShadow: `0px 0px 6px ${lineColor}`,
-              backgroundColor: "transparent", // No background color
+              backgroundColor: "transparent", 
               border: `4px solid ${lineColor}`,
               borderRadius: "20px",
               textAlign: "center",
-              color: "#fff", // White text
+              color: "#fff", 
             }}
             contentArrowStyle={{ borderRight: `16px solid ${lineColor}` }}
             iconStyle={{
               backgroundColor: "#f9fafb",
-              borderRadius: "50%", // Circular icon
+              borderRadius: "50%",
               display: "flex",
               justifyContent: "center",
               alignItems: "center",
