@@ -3,14 +3,14 @@ import ProfilePic from "../assets/about-pic.jpg";
 
 const About = () => {
     return (
-        <div className="w-full bg-[#000300] py-16 text-white flex items-center justify-center ease-in-out duration 500">
-            <div className="bg-[#28282B] max-w-[1000px] w-full mx-4 sm:mx-6 md:mx-8 lg:mx-10 xl:mx-12 flex flex-col md:flex-row p-10 rounded-md">
+        <div className="w-full h-[100vh] bg-[#000300] py-16 text-white flex items-center justify-center">
+            <div className="bg-[#28282B] max-w-[1000px] w-full mx-4 sm:mx-4 md:mx-6 lg:mx-8 xl:mx-10 flex flex-col md:flex-row p-10 rounded-md">
                 <div className="flex-shrink-0 mb-6 md:mb-0 md:mr-10">
                     <img src={ProfilePic} alt="My Profile Picture" className="w-[300px] p-5 rounded-full m-auto" />
                 </div>
-                <div className="flex-1 text-center p-5 md:text-left">
+                <div className="flex-1 text-center p-3 md:text-left">
                     <h1 className="text-3xl md:text-4xl font-bold">Get to know me!</h1>
-                    <p className="text-sm font-normal py-4">
+                    <p className="text-sm font-normal py-3">
                         Hello!👋 I am an incoming 4th-year Computer Engineering student at the Polytechnic University of the Philippines.
                         My journey in the 🌐 world of technology has been an exciting one, filled with learning and growth.<br /><br />
                         

@@ -39,7 +39,7 @@ const social = [
 
 const Footer = () => {
     return (
-        <footer className="bg-[#000300] text-white text-center py-4">
+        <footer className="bg-[#000300] text-white text-center mt-20 py-4">
             <div className="max-w-[1240px] mx-auto grid grid-cols-1 md:grid-cols-3 gap-4 border-b-2 border-gray-600 pb-8">
                 <div className="flex flex-col items-center justify-center text-center">
                     <img
