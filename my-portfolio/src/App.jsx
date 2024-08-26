@@ -13,6 +13,7 @@ function App() {
       <Header />
       <Main />
       <About />
+      <Education />
       <Skills />
       <Footer />
     </div>
