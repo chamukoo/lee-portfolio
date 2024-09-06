@@ -33,7 +33,7 @@ const Skills = () => {
   return (
     <div className="min-h-screen my-20 mx-12 py-20 px-4 bg-[#000300]" id="skills">
       <div className="max-w-[1000px] mx-auto">
-        <h2 className="text-2xl font-semibold text-center text-white mb-8">
+        <h2 className="text-3xl font-semibold text-center text-white mb-8">
           Professional <span className="text-[#89CFF0]">Skillset</span>
         </h2>
 
@@ -41,7 +41,10 @@ const Skills = () => {
           {skills.map((skill, index) => (
             <div
               key={index}
-              className="relative flex items-center bg-transparent border-2 border-[#89CFF0] rounded-lg p-6 shadow-[0_0px_10px_0_rgba(137,207,240,0.7)] group"
+              className={`relative flex items-center bg-transparent border-2 border-[#89CFF0] rounded-lg p-6 shadow-[0_0px_10px_0_rgba(137,207,240,0.7)] group 
+              transition-transform duration-1000 delay-200 ease-in-out transform ${
+                hoveredSkill === index ? 'scale-110' : 'scale-100'
+              }`}
               onMouseEnter={() => setHoveredSkill(index)}
               onMouseLeave={() => setHoveredSkill(null)}
             >
