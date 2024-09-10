@@ -9,7 +9,7 @@ const Header = () => {
   };
 
   return (
-    <header className="flex justify-between items-center h-20 max-w-full mx-auto px-10 text-white">
+    <header className="fixed top-0 left-0 w-full h-20 bg-[#000300] text-white flex justify-between items-center px-10 z-50">
       <div className="flex items-center">
         <img
           src={Logo}
@@ -36,7 +36,7 @@ const Header = () => {
         }
       >
         <h1 className="w-full text-3xl font-bold text-[#89CFF0] m-6">Logo</h1>
-        <ul className="uppercase p-4 ">
+        <ul className="uppercase p-4">
           <li className="p-4 border-b border-b-gray-600">Home</li>
           <li className="p-4 border-b border-b-gray-600">About</li>
           <li className="p-4 border-b border-b-gray-600">Skills</li>

@@ -5,7 +5,7 @@ import videobg from "../assets/videobg2.mp4";
 
 const Main = () => {
     return (
-        <div className="relative text-white h-screen overflow-hidden">
+        <div className="relative text-white h-screen overflow-hidden flex items-center justify-center">
             <video
                 src={videobg}
                 className="absolute top-0 left-0 w-full h-full object-cover z-[-1]"
@@ -14,7 +14,7 @@ const Main = () => {
                 muted
                 playsInline
             />
-            <div className="relative max-w-[800px] mt-[-96px] w-full h-full mx-auto text-center flex flex-col justify-center items-center">
+            <div className="relative max-w-[800px] w-full h-full mx-auto text-center flex flex-col justify-center items-center">
                 <p className="md:text-2xl sm:1xl text-[#89CFF0] font-bold tracking-wide p-2">
                     HELLO WORLD! 👋
                 </p>
