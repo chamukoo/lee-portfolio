@@ -1,7 +1,7 @@
 import React from "react";
 import { FaGithub, FaLinkedin, FaFacebook, FaInstagram } from 'react-icons/fa';
 
-import Logo from "../assets/logo.png";
+import Logo from "../assets/lee-logo.png";
 
 const sections = [
     {
@@ -45,7 +45,7 @@ const Footer = () => {
                     <img
                         src={Logo}
                         alt="Logo"
-                        className="w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 mb-4 mt-5"
+                        className="w-[250px] h-auto md:w-[300px] lg:w-[400px] max-w-full" // Responsive classes for the logo
                     />
                     <p className="p-2 text-gray-500">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.

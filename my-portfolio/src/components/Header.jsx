@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
-import Logo from "../assets/logo.png";
+import Logo from "../assets/lee-logo.png";
 
 const Header = () => {
   const [nav, setNav] = useState(false);
@@ -14,7 +14,7 @@ const Header = () => {
         <img
           src={Logo}
           alt="Logo"
-          className="w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 mr-2"
+          className="w-[200px] h-auto md:w-[300px] lg:w-[400px] max-w-full" // Responsive classes for the logo
         />
       </div>
 
@@ -35,7 +35,11 @@ const Header = () => {
             : "fixed left-[-100%]"
         }
       >
-        <h1 className="w-full text-3xl font-bold text-[#89CFF0] m-6">Logo</h1>
+        <img
+          src={Logo}
+          alt="Logo"
+          className="w-[250px] h-auto py-8 pl-4 md:w-[300px] lg:w-[400px] max-w-full" // Responsive classes for the logo
+        />
         <ul className="uppercase p-4">
           <li className="p-4 border-b border-b-gray-600">Home</li>
           <li className="p-4 border-b border-b-gray-600">About</li>

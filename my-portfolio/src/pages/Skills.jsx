@@ -11,7 +11,7 @@ import figma from '../assets/skills-images/figma.png';
 import git from '../assets/skills-images/git.png';
 import vscode from '../assets/skills-images/vscode.png';
 import kali from '../assets/skills-images/kali.png';
-import './Skills.css'; // Import your CSS file here
+import './Skills.css'; 
 
 const Skills = () => {
   const [hoveredSkill, setHoveredSkill] = useState(null);
