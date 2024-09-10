@@ -12,7 +12,7 @@ const Education = () => {
   const lineColor = "#89CFF0"; 
 
   return (
-    <div className="min-h-screen my-20 bg-[#000300]" id="education">
+    <div id="education" className="min-h-screen my-20 bg-[#000300]" id="education">
       <div className="max-w-[1000px] mx-auto">
         <h2 className="text-2xl font-semibold text-center text-white mb-8">
           <span className="text-[#89CFF0]">Educational</span> Background

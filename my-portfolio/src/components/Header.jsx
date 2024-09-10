@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
+import { Link } from "react-router-dom"; // Import Link from react-router-dom
 import Logo from "../assets/lee-logo.png";
 
 const Header = () => {
@@ -19,15 +20,17 @@ const Header = () => {
       </div>
 
       <ul className="hidden md:flex">
-        <li className="p-4 w-auto">Home</li>
-        <li className="p-4 w-auto">About</li>
-        <li className="p-4 w-auto">Skills</li>
-        <li className="p-4 w-auto">Portfolio</li>
-        <li className="p-4 w-auto border">Contact</li>
+        <li className="p-4 w-auto"><Link to="/Main">Home</Link></li>
+        <li className="p-4 w-auto"><Link to="/About">About</Link></li>
+        <li className="p-4 w-auto"><Link to="/Skills">Skills</Link></li>
+        <li className="p-4 w-auto"><Link to="/">Portfolio</Link></li>
+        <li className="p-4 w-auto border"><Link to="/">Contact</Link></li>
       </ul>
+      
       <div onClick={toggleNav} className="block md:hidden">
         {!nav ? <AiOutlineClose size={25} /> : <AiOutlineMenu size={25} />}
       </div>
+      
       <div
         className={
           !nav
@@ -41,11 +44,11 @@ const Header = () => {
           className="w-[250px] h-auto py-8 pl-4 md:w-[300px] lg:w-[400px] max-w-full" // Responsive classes for the logo
         />
         <ul className="uppercase p-4">
-          <li className="p-4 border-b border-b-gray-600">Home</li>
-          <li className="p-4 border-b border-b-gray-600">About</li>
-          <li className="p-4 border-b border-b-gray-600">Skills</li>
-          <li className="p-4 border-b border-b-gray-600">Portfolio</li>
-          <li className="p-4">Contact</li>
+          <li className="p-4 border-b border-b-gray-600"><Link to="/">Home</Link></li>
+          <li className="p-4 border-b border-b-gray-600"><Link to="/about">About</Link></li>
+          <li className="p-4 border-b border-b-gray-600"><Link to="/skills">Skills</Link></li>
+          <li className="p-4 border-b border-b-gray-600"><Link to="/portfolio">Portfolio</Link></li>
+          <li className="p-4"><Link to="/contact">Contact</Link></li>
         </ul>
       </div>
     </header>

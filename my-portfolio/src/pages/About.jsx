@@ -3,7 +3,7 @@ import ProfilePic from "../assets/about-pic.jpg";
 
 const About = () => {
     return (
-        <div className="w-full h-auto bg-[#000300] my-20 text-white flex items-center justify-center">
+        <div id="about" className="w-full h-auto bg-[#000300] my-20 text-white flex items-center justify-center">
             <div className="bg-[#28282B] max-w-[1000px] w-full mx-4 sm:mx-4 md:mx-6 lg:mx-8 xl:mx-10 flex flex-col md:flex-row p-10 rounded-md">
                 <div className="flex-shrink-0 mb-6 md:mb-0 md:mr-10">
                     <img src={ProfilePic} alt="My Profile Picture" className="w-[300px] p-5 rounded-full m-auto" />
