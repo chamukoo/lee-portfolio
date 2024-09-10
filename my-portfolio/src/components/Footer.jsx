@@ -91,7 +91,9 @@ const Footer = () => {
                     </ul>
                 </div>
             </div>
-            <p className="text-sm mt-4 pt-4">© 2021 Lee Anne Angeles. All rights reserved.</p>
+            <p className="text-sm pt-4 text-center tracking-wider text-gray-300">
+                Made with 💙 by Lee Anne Angeles
+            </p>
         </footer>
     );
 }
