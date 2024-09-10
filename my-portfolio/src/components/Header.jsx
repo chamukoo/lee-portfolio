@@ -22,8 +22,9 @@ const Header = () => {
       <ul className="hidden md:flex">
         <li className="p-4 w-auto"><Link to="/Main">Home</Link></li>
         <li className="p-4 w-auto"><Link to="/About">About</Link></li>
+        <li className="p-4 w-auto"><Link to="/Education">Education</Link></li>
         <li className="p-4 w-auto"><Link to="/Skills">Skills</Link></li>
-        <li className="p-4 w-auto"><Link to="/">Portfolio</Link></li>
+        <li className="p-4 w-auto"><Link to="/">Project</Link></li>
         <li className="p-4 w-auto border"><Link to="/">Contact</Link></li>
       </ul>
       
@@ -46,6 +47,7 @@ const Header = () => {
         <ul className="uppercase p-4">
           <li className="p-4 border-b border-b-gray-600"><Link to="/">Home</Link></li>
           <li className="p-4 border-b border-b-gray-600"><Link to="/about">About</Link></li>
+          <li className="p-4 border-b border-b-gray-600"><Link to="/education">Education</Link></li>
           <li className="p-4 border-b border-b-gray-600"><Link to="/skills">Skills</Link></li>
           <li className="p-4 border-b border-b-gray-600"><Link to="/portfolio">Portfolio</Link></li>
           <li className="p-4"><Link to="/contact">Contact</Link></li>
