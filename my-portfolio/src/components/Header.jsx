@@ -15,7 +15,7 @@ const Header = () => {
         <img
           src={Logo}
           alt="Logo"
-          className="w-[200px] h-auto md:w-[300px] lg:w-[400px] max-w-full" // Responsive classes for the logo
+          className="w-[200px] h-auto md:w-[300px] lg:w-[250px] max-w-full" // Responsive classes for the logo
         />
       </div>
 
