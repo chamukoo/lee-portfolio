@@ -24,7 +24,6 @@ const Education = () => {
             className="w-full h-auto transform transition-transform duration-300 ease-in-out hover:translate-x-0 hover:-translate-y-4"
           />
         </div>
-
         {/* Column 2: Text content */}
         <div className="w-full md:w-1/2 text-white text-center flex flex-col items-center px-5 slide-in-right">
           <h1 className="text-4xl font-bold mb-4">Education 💫</h1>
