@@ -1,16 +1,47 @@
 import React from "react";
 import ProfilePic from "../assets/about-pic.jpg";
+import { FaGithub, FaLinkedin, FaFacebook, FaInstagram } from "react-icons/fa";
+
+const social = [
+    {
+        name: "Github",
+        icon: <FaGithub />,
+        link: "https://github.com/chamukoo"
+    },
+    {
+        name: "LinkedIn",
+        icon: <FaLinkedin />,
+        link: "https://www.linkedin.com/in/lee-anne-angeles-673124312/"
+    },
+    {
+        name: "Facebook",
+        icon: <FaFacebook />,
+        link: "https://www.facebook.com/leeanneyangeles"
+    },
+    {
+        name: "Instagram",
+        icon: <FaInstagram />,
+        link: "https://www.instagram.com/liyaaaaaan_/"
+    }
+];
 
 const About = () => {
     return (
-        <div id="about" className="w-full h-auto bg-[#000300] my-20 text-white flex items-center justify-center">
-            <div className="bg-[#28282B] max-w-[1000px] w-full mx-4 sm:mx-4 md:mx-6 lg:mx-8 xl:mx-10 flex flex-col md:flex-row p-10 rounded-md">
-                <div className="flex-shrink-0 mb-6 md:mb-0 md:mr-10">
-                    <img src={ProfilePic} alt="My Profile Picture" className="w-[300px] p-5 rounded-full m-auto" />
+        <div id="about" className="min-h-screen my-20 bg-[#000300] text-white">
+            <div className="mx-auto h-auto flex flex-col md:flex-row items-center px-10 gap-5">
+                {/* Profile Picture */}
+                <div className="flex-shrink-0 mb-6 md:mb-0 md:mr-10 flex justify-center">
+                    <img 
+                        src={ProfilePic} 
+                        alt="My Profile Picture" 
+                        className="w-[300px] h-[300px] sm:w-[400px] sm:h-[400px] md:w-[450px] md:h-[450px] lg:w-[450px] lg:h-[450px] xl:w-[500px] xl:h-[500px] rounded-full object-cover"
+                    />
                 </div>
-                <div className="flex-1 text-center p-3 md:text-left">
-                    <h1 className="text-3xl md:text-4xl font-bold">Get to know me!</h1>
-                    <p className="text-sm font-normal py-3">
+
+                {/* About Me Content */}
+                <div className="flex-1 text-center md:text-left">
+                    <h1 className="text-3xl md:text-4xl font-bold mb-4">Get to know me!</h1>
+                    <p className="text-sm font-normal py-3 px-3">
                         Hello!👋 I am an incoming 4th-year Computer Engineering student at the Polytechnic University of the Philippines.
                         My journey in the 🌐 world of technology has been an exciting one, filled with learning and growth.<br /><br />
                         
@@ -22,6 +53,27 @@ const About = () => {
                         This new venture allows me to bring my web development expertise into the realm of mobile apps,
                         creating seamless and engaging user experiences across different platforms.
                     </p>
+                    <div className="mt-6 flex justify-center md:justify-start gap-4">
+                        {/* See My Resume Button */}
+                        <a 
+                            href="https://drive.google.com/file/d/14209rNqlwvQQNU4jbqT17mLrZMs1HxZz/view?usp=drive_link" 
+                            target="_blank" 
+                            rel="noopener noreferrer" 
+                            className="text-sm text-[#000300] bg-[#00FFFF] px-4 py-2 rounded-full font-semibold hover:bg-[#0000FF] transition duration-300 ease-in-out">
+                            See My Resume
+                        </a>
+                        {/* Social Media Icons */}
+                        {social.map((item) => (
+                            <a 
+                                key={item.name} 
+                                href={item.link} 
+                                target="_blank" 
+                                rel="noopener noreferrer" 
+                                className="text-4xl text-[#00FFFF] hover:text-[#FFFFFF]">
+                                {item.icon}
+                            </a>
+                        ))}
+                    </div>
                 </div>
             </div>
         </div>
