@@ -17,7 +17,7 @@ const Education = () => {
       {/* Main container for the two columns */}
       <div className="mx-auto h-auto flex flex-col md:flex-row items-center px-10 gap-5 mb-20">
         {/* Column 1: Image */}
-        <div className="w-full md:w-1/2 flex justify-center md:justify-start">
+        <div className="w-full md:w-1/2 flex justify-center md:justify-start slide-in-left">
           <img
             src={education}
             alt="Education"
@@ -26,7 +26,7 @@ const Education = () => {
         </div>
 
         {/* Column 2: Text content */}
-        <div className="w-full md:w-1/2 text-white text-center flex flex-col items-center px-5">
+        <div className="w-full md:w-1/2 text-white text-center flex flex-col items-center px-5 slide-in-right">
           <h1 className="text-4xl font-bold mb-4">Education 💫</h1>
           <h2 className="text-2xl font-semibold mb-4 text-[#89CFF0]">
             Basic Qualification and Certifications
