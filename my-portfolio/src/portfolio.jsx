@@ -22,42 +22,75 @@ import git from './assets/skills-images/git.png';
 import vscode from './assets/skills-images/vscode.png';
 import kali from './assets/skills-images/kali.png';
 
+import cisco from './assets/cisco.png';
+import meta from './assets/meta.png';
+
 export const timelineElements = [
     {
         logo: pup,
         school: "Polytechnic University of the Philippines",
         level: "Bachelor of Science in Computer Engineering",
-        location: "Sta. Mesa, Manila",
-        date: "S.Y. 2021 - Present",
+        location: "📍🗺️ Sta. Mesa, Manila",
+        date: "⭐ S.Y. 2021 - Present",
     },
     {
         logo: olfu,
         school: "Our Lady of Fatima University",
         level: "Senior High School",
-        location: "Tomas Claudio St., Morong, Rizal",
-        date: "S.Y. 2019 - 2021",
+        location: "📍🗺️ Tomas Claudio St., Morong, Rizal",
+        date: "⭐ S.Y. 2019 - 2021",
     },
     {
         logo: mnhs,
         school: "Morong National High School",
         level: "Junior High School (Grade 10)",
-        location: "Tomas Claudio St., Morong, Rizal",
-        date: "S.Y. 2018 - 2019",
+        location: "📍🗺️ Tomas Claudio St., Morong, Rizal",
+        date: "⭐ S.Y. 2018 - 2019",
     },
     {
         logo: sja,
         school: "St. Jerome's Academy",
         level: "Junior High School (Grade 7 - 9)",
-        location: "771 Tomas Claudio St., Morong, Rizal",
-        date: "S.Y. 2015 - 2018",
+        location: "📍🗺️ 771 Tomas Claudio St., Morong, Rizal",
+        date: "⭐ S.Y. 2015 - 2018",
     },
     {
         logo: tcmes,
         school: "Tomas Claudio Memorial Elementary School",
         level: "Primary School (Grade 1 - 6)",
-        location: "Tomas Claudio St., Morong, Rizal",
-        date: "S.Y. 2009 - 2015",
+        location: "📍🗺️ Tomas Claudio St., Morong, Rizal",
+        date: "⭐ S.Y. 2009 - 2015",
     }
+];
+
+export const certifications = [
+    {
+        cover: cisco,
+        title: "CCNA: Switching, Routing, and Wireless Essentials",
+        issuer: "Cisco",
+        date: "July 20, 2024",
+        certificate: 'https://drive.google.com/file/d/1f-BaCIcczPmhlIIPp62HRoo73ZbyOndr/view?usp=drive_link',
+        link: "https://www.credly.com/badges/eaa9323e-80fe-48e6-8a85-48a5fd5bbc4b/public_url",
+        skillsGained: [
+            "Routing",
+            "Switching Protocols",
+            "Network Fundamentals",
+            "IP Services",
+        ]
+    },
+    {
+        cover: meta,
+        title: "Introduction to Front-End Development",
+        issuer: "Meta",
+        date: "September 11, 2024",
+        certificate: 'https://drive.google.com/file/d/1NJcoxoNGW420ZdqV6X-KQf-LdGKKvmHK/view?usp=drive_link',
+        link: "https://www.coursera.org/account/accomplishments/verify/7YW9CPR3EX42",
+        skillsGained: [
+            "HTML",
+            "CSS",
+            "Web Development",
+        ]
+    },
 ];
 
 export const skills = [
