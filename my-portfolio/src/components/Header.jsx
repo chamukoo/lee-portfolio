@@ -12,7 +12,7 @@ const Header = () => {
   };
 
   return (
-    <header className="flex justify-between items-center p-4 bg-[#000300] text-white">
+    <header className="sticky top-0 z-50 flex justify-between items-center p-4 bg-[#000300] text-white">
       <img src={Logo} alt="Logo" className="w-[150px] h-auto" />
 
       <ul className="hidden md:flex">
