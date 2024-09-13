@@ -1,45 +1,58 @@
 @keyframes floatIn {
-    0% {
-      transform: translateY(20px);
-      opacity: 0;
-    }
-    100% {
-      transform: translateY(0);
-      opacity: 1;
-    }
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
   }
-  
-  .float-in {
-    animation: floatIn 2s ease-out forwards;
+  100% {
+    transform: translateY(0);
+    opacity: 1;
   }
+}
+
+.float-in {
+  animation: floatIn 2s ease-out forwards;
+}
 
 @keyframes slideInLeft {
-    from {
-      transform: translateX(-100%);
-      opacity: 0;
-    }
-    to {
-      transform: translateX(0);
-      opacity: 1;
-    }
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
   }
-  
-  @keyframes slideInRight {
-    from {
-      transform: translateX(100%);
-      opacity: 0;
-    }
-    to {
-      transform: translateX(0);
-      opacity: 1;
-    }
+  to {
+    transform: translateX(0);
+    opacity: 1;
   }
-  
-  .slide-in-left {
-    animation: slideInLeft 1s ease-out forwards;
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
   }
-  
-  .slide-in-right {
-    animation: slideInRight 1s ease-out forwards;
+  to {
+    transform: translateX(0);
+    opacity: 1;
   }
-  
+}
+
+.slide-in-left {
+  animation: slideInLeft 1s ease-out forwards;
+}
+
+.slide-in-right {
+  animation: slideInRight 1s ease-out forwards;
+}
+
+/* New floating effect for hover */
+@keyframes floatEffect {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+.hover\:float-effect:hover {
+  animation: floatEffect 0.6s ease-in-out infinite;
+}

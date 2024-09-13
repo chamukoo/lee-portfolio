@@ -1,11 +1,14 @@
+// For social media links
 import { FaGithub, FaLinkedin, FaFacebook, FaInstagram } from "react-icons/fa";
 
+// For Timeline in Education Page
 import pup from "./assets/images/pup-logo.png"; 
 import olfu from "./assets/images/olfu-logo.png";
 import mnhs from "./assets/images/mnhs-logo.png";
 import sja from "./assets/images/sja-logo.png";
 import tcmes from "./assets/images/tcmes-logo.png";
 
+// For Skills
 import html from './assets/skills-images/html.png';
 import css from './assets/skills-images/css.png';
 import js from './assets/skills-images/js.png';

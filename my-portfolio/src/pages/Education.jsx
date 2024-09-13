@@ -1,7 +1,7 @@
 import React from "react";
 import { VerticalTimeline, VerticalTimelineElement } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
-import { timelineElements } from '../portfolio'; // Importing timelineElements from portfolio
+import { timelineElements } from '../portfolio';
 
 import education from "../assets/education.png";
 
@@ -58,7 +58,13 @@ const Education = () => {
                 alignItems: "center",
                 padding: "1px",
               }}
-              icon={<img src={element.logo} alt={`${element.school} Logo`} className="w-10 h-10" />}
+              icon={
+                <img 
+                  src={element.logo} 
+                  alt={`${element.school} Logo`} 
+                  className="w-10 h-10 hover:float-effect" // Add hover effect class
+                />
+              }
             >
               <h3 className="text-md font-semibold">{element.school}</h3>
               <h4 className="text-sm text-[#89CFF0]">{element.level}</h4>
