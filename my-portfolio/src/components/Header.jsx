@@ -1,33 +1,31 @@
 import React, { useState } from "react";
-import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
-import { Link } from "react-router-dom"; // Import Link from react-router-dom
-import Logo from "../assets/lee-logo.png";
+import { Link } from "react-router-dom";
+import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
+import Logo from "../assets/lee-logo.png"; // Adjust the path to your logo
+import { navLinks } from "../portfolio"; // Import navLinks from portfolio.jsx
 
 const Header = () => {
   const [nav, setNav] = useState(false);
+
   const toggleNav = () => {
     setNav(!nav);
   };
 
   return (
-    <header className="fixed top-0 left-0 w-full h-20 bg-[#000300] text-white flex justify-between items-center px-10 z-50">
-      <div className="flex items-center">
-        <img
-          src={Logo}
-          alt="Logo"
-          className="w-[200px] h-auto md:w-[300px] lg:w-[250px] max-w-full" // Responsive classes for the logo
-        />
-      </div>
+    <header className="flex justify-between items-center p-4 bg-[#000300] text-white">
+      <img src={Logo} alt="Logo" className="w-[150px] h-auto" />
 
       <ul className="hidden md:flex">
-        <li className="p-4 w-auto"><Link to="/Main">Home</Link></li>
-        <li className="p-4 w-auto"><Link to="/About">About</Link></li>
-        <li className="p-4 w-auto"><Link to="/Education">Education</Link></li>
-        <li className="p-4 w-auto"><Link to="/Skills">Skills</Link></li>
-        <li className="p-4 w-auto"><Link to="/">Project</Link></li>
-        <li className="p-4 w-auto border"><Link to="/">Contact</Link></li>
+        {navLinks.map((link, index) => (
+          <li key={index} className="p-4 w-auto flex items-center">
+            <Link to={link.path} className="flex items-center hover:text-[#89CFF0] hover:float-effect">
+              {link.icon}
+              <span className="ml-2 px-1 text-lg">{link.name}</span>
+            </Link>
+          </li>
+        ))}
       </ul>
-      
+
       <div onClick={toggleNav} className="block md:hidden">
         {nav ? <AiOutlineClose size={25} /> : <AiOutlineMenu size={25} />}
       </div>
@@ -39,19 +37,20 @@ const Header = () => {
             : "fixed left-[-100%]"
         }
       >
-
         <img
           src={Logo}
           alt="Logo"
-          className="w-[250px] h-auto py-8 pl-4 md:w-[300px] lg:w-[400px] max-w-full" // Responsive classes for the logo
+          className="w-[250px] h-auto py-8 pl-4 md:w-[300px] lg:w-[400px] max-w-full"
         />
         <ul className="uppercase p-4">
-          <li className="p-4 border-b border-b-gray-600"><Link to="/">Home</Link></li>
-          <li className="p-4 border-b border-b-gray-600"><Link to="/about">About</Link></li>
-          <li className="p-4 border-b border-b-gray-600"><Link to="/education">Education</Link></li>
-          <li className="p-4 border-b border-b-gray-600"><Link to="/skills">Skills</Link></li>
-          <li className="p-4 border-b border-b-gray-600"><Link to="/portfolio">Portfolio</Link></li>
-          <li className="p-4"><Link to="/contact">Contact</Link></li>
+          {navLinks.map((link, index) => (
+            <li key={index} className="p-4 border-b border-b-gray-600 flex items-center">
+              <Link to={link.path} className="flex items-center hover:text-[#89CFF0] hover:float-effect">
+                {link.icon}
+                <span className="ml-2 text-lg">{link.name}</span>
+              </Link>
+            </li>
+          ))}
         </ul>
       </div>
     </header>

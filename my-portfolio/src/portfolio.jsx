@@ -1,6 +1,10 @@
 // For social media links
 import { FaGithub, FaLinkedin, FaFacebook, FaInstagram } from "react-icons/fa";
 
+// For navigation links
+import { FaHome, FaUser, FaGraduationCap, FaTools, FaProjectDiagram, FaEnvelope } from "react-icons/fa";
+
+
 // For Timeline in Education Page
 import pup from "./assets/images/pup-logo.png"; 
 import olfu from "./assets/images/olfu-logo.png";
@@ -25,6 +29,40 @@ import kali from './assets/skills-images/kali.png';
 import cisco from './assets/cisco.png';
 import meta from './assets/meta.png';
 
+
+export const navLinks = [
+    {
+      name: "Home",
+      icon: <FaHome />,
+      path: "/Main"
+    },
+    {
+      name: "About",
+      icon: <FaUser />,
+      path: "/About"
+    },
+    {
+      name: "Education",
+      icon: <FaGraduationCap />,
+      path: "/Education"
+    },
+    {
+      name: "Skills",
+      icon: <FaTools />,
+      path: "/Skills"
+    },
+    {
+      name: "Portfolio",
+      icon: <FaProjectDiagram />,
+      path: "/Portfolio"
+    },
+    {
+      name: "Contact",
+      icon: <FaEnvelope />,
+      path: "/Contact"
+    }
+];
+  
 export const timelineElements = [
     {
         logo: pup,
