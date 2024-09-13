@@ -1,29 +1,7 @@
+// About.jsx
 import React from "react";
 import ProfilePic from "../assets/about-pic.jpg";
-import { FaGithub, FaLinkedin, FaFacebook, FaInstagram } from "react-icons/fa";
-
-const social = [
-    {
-        name: "Github",
-        icon: <FaGithub />,
-        link: "https://github.com/chamukoo"
-    },
-    {
-        name: "LinkedIn",
-        icon: <FaLinkedin />,
-        link: "https://www.linkedin.com/in/lee-anne-angeles-673124312/"
-    },
-    {
-        name: "Facebook",
-        icon: <FaFacebook />,
-        link: "https://www.facebook.com/leeanneyangeles"
-    },
-    {
-        name: "Instagram",
-        icon: <FaInstagram />,
-        link: "https://www.instagram.com/liyaaaaaan_/"
-    }
-];
+import { social } from "../portfolio"; // Import sections and social from portfolio
 
 const About = () => {
     return (

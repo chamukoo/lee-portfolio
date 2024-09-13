@@ -1,16 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import html from '../assets/skills-images/html.png';
-import css from '../assets/skills-images/css.png';
-import js from '../assets/skills-images/js.png';
-import react from '../assets/skills-images/reactjs.png';
-import php from '../assets/skills-images/php.png';
-import python from '../assets/skills-images/python.png';
-import wordpress from '../assets/skills-images/wordpress.png';
-import tailwindCSS from '../assets/skills-images/tailwindCSS.png';
-import figma from '../assets/skills-images/figma.png';
-import git from '../assets/skills-images/git.png';
-import vscode from '../assets/skills-images/vscode.png';
-import kali from '../assets/skills-images/kali.png';
+import { skills } from '../portfolio'; // Importing skills from portfolio.jsx
 import '../global.css'; 
 
 const Skills = () => {
@@ -18,21 +7,6 @@ const Skills = () => {
   const [visibleSkills, setVisibleSkills] = useState([]);
 
   const skillsRef = useRef([]);
-
-  const skills = [
-    { imgSrc: html, alt: 'HTML Logo', name: 'HTML', level: 'Intermediate' },
-    { imgSrc: css, alt: 'CSS Logo', name: 'CSS', level: 'Intermediate' },
-    { imgSrc: js, alt: 'JavaScript Logo', name: 'JavaScript', level: 'Advanced' },
-    { imgSrc: react, alt: 'ReactJS Logo', name: 'React', level: 'Intermediate' },
-    { imgSrc: tailwindCSS, alt: 'TailwindCSS Logo', name: 'TailwindCSS', level: 'Intermediate' },
-    { imgSrc: python, alt: 'Python Logo', name: 'Python', level: 'Advanced' },
-    { imgSrc: php, alt: 'PHP Logo', name: 'PHP', level: 'Intermediate' },
-    { imgSrc: wordpress, alt: 'WordPress Logo', name: 'WordPress', level: 'Intermediate' },
-    { imgSrc: figma, alt: 'Figma Logo', name: 'Figma', level: 'Beginner' },
-    { imgSrc: git, alt: 'Git Logo', name: 'Git', level: 'Intermediate' },
-    { imgSrc: vscode, alt: 'Visual Studio Code Logo', name: 'VS Code', level: 'Advanced' },
-    { imgSrc: kali, alt: 'Kali Linux Logo', name: 'Kali Linux', level: 'Beginner' }
-  ];
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -78,7 +52,7 @@ const Skills = () => {
               onMouseLeave={() => setHoveredSkill(null)}
             >
               <img
-                src={skill.imgSrc}
+                src={skill.logo}
                 alt={skill.alt}
                 className="w-8 h-8"
               />

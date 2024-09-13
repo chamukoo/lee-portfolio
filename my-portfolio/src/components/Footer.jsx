@@ -1,41 +1,6 @@
 import React from "react";
-import { FaGithub, FaLinkedin, FaFacebook, FaInstagram } from 'react-icons/fa';
-
 import Logo from "../assets/lee-logo.png";
-
-const sections = [
-    {
-        title: "Quick Links",
-        items: ["Home", "About", "Skills", "Portfolio", "Contact"]
-    },
-    {
-        title: "Contact",
-        items: ["+63 938 332 6648", "leeangeles2@gmail.com", "Capinpin St., Morong", "Rizal 1960, Philippines"]
-    }
-];
-
-const social = [
-    {
-        name: "Github",
-        icon: <FaGithub />,
-        link: "https://github.com/chamukoo"
-    },
-    {
-        name: "LinkedIn",
-        icon: <FaLinkedin />,
-        link: "https://www.linkedin.com/in/lee-anne-angeles-673124312/"
-    },
-    {
-        name: "Facebook",
-        icon: <FaFacebook />,
-        link: "https://www.facebook.com/leeanneyangeles"
-    },
-    {
-        name: "Instagram",
-        icon: <FaInstagram />,
-        link: "https://www.instagram.com/liyaaaaaan_/"
-    }
-];
+import { sections, social } from "../portfolio"; // Importing sections and social from portfolio.jsx
 
 const Footer = () => {
     return (
@@ -65,7 +30,7 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className="flex flex-col items-center">
-                    <h6 className="font-bold uppercase text-lg mb-4 mt-5">Quick Links</h6>
+                    <h6 className="font-bold uppercase text-lg mb-4 mt-5">{sections[0].title}</h6>
                     <ul>
                         {sections[0].items.map((item, i) => (
                             <li
@@ -78,7 +43,7 @@ const Footer = () => {
                     </ul>
                 </div>
                 <div className="flex flex-col items-center">
-                    <h6 className="font-bold uppercase text-lg mb-4 mt-5">Contact</h6>
+                    <h6 className="font-bold uppercase text-lg mb-4 mt-5">{sections[1].title}</h6>
                     <ul>
                         {sections[1].items.map((item, i) => (
                             <li
@@ -96,6 +61,6 @@ const Footer = () => {
             </p>
         </footer>
     );
-}
+};
 
 export default Footer;
