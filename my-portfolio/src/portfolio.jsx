@@ -129,6 +129,19 @@ export const certifications = [
             "Web Development",
         ]
     },
+    {
+        cover: meta,
+        title: "Programming with JavaScript",
+        issuer: "Meta",
+        date: "September 23, 2024",
+        certificate: 'https://coursera.org/share/38424a84a4c6ed14eeaa39093ea7f3eb',
+        link: "https://coursera.org/share/38424a84a4c6ed14eeaa39093ea7f3eb",
+        skillsGained: [
+            "Javascript",
+            "Unit Testing with Jest",
+            "Object-Oriented Programming",
+        ]
+    },
 ];
 
 export const skills = [
