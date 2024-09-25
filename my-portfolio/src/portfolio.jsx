@@ -1,10 +1,6 @@
 // For social media links
 import { FaGithub, FaLinkedin, FaFacebook, FaInstagram } from "react-icons/fa";
 
-// For navigation links
-import { FaHome, FaUser, FaGraduationCap, FaTools, FaProjectDiagram, FaEnvelope } from "react-icons/fa";
-
-
 // For Timeline in Education Page
 import pup from "./assets/images/pup-logo.png"; 
 import olfu from "./assets/images/olfu-logo.png";
@@ -12,17 +8,21 @@ import mnhs from "./assets/images/mnhs-logo.png";
 import sja from "./assets/images/sja-logo.png";
 import tcmes from "./assets/images/tcmes-logo.png";
 
-// For Skills
+// For Skills -- Tech Stakcs
 import html from './assets/skills-images/html.png';
 import css from './assets/skills-images/css.png';
 import js from './assets/skills-images/js.png';
 import react from './assets/skills-images/reactjs.png';
 import php from './assets/skills-images/php.png';
-import python from './assets/skills-images/python.png';
-import wordpress from './assets/skills-images/wordpress.png';
 import tailwindCSS from './assets/skills-images/tailwindCSS.png';
-import figma from './assets/skills-images/figma.png';
+import python from './assets/skills-images/python.png';
+
+// For Skills -- Tools
 import git from './assets/skills-images/git.png';
+import postman from './assets/skills-images/postman.png';
+import npm from './assets/skills-images/npm.png';
+import figma from './assets/skills-images/figma.png';
+import wordpress from './assets/skills-images/wordpress.png';
 import vscode from './assets/skills-images/vscode.png';
 import kali from './assets/skills-images/kali.png';
 
@@ -33,34 +33,20 @@ import meta from './assets/meta.png';
 export const navLinks = [
     {
       name: "Home",
-      icon: <FaHome />,
       path: "/Main"
     },
     {
       name: "About",
-      icon: <FaUser />,
       path: "/About"
     },
     {
       name: "Education",
-      icon: <FaGraduationCap />,
       path: "/Education"
     },
     {
-      name: "Skills",
-      icon: <FaTools />,
-      path: "/Skills"
-    },
-    {
       name: "Portfolio",
-      icon: <FaProjectDiagram />,
       path: "/Portfolio"
     },
-    {
-      name: "Contact",
-      icon: <FaEnvelope />,
-      path: "/Contact"
-    }
 ];
 
 // For Timeline in Education Page
@@ -150,75 +136,73 @@ export const skills = [
     { 
         logo: html, 
         alt: 'HTML Logo', 
-        name: 'HTML', 
-        level: 'Intermediate' 
+        type: 'tech stacks'
     },
     { 
         logo: css, 
         alt: 'CSS Logo', 
-        name: 'CSS', 
-        level: 'Intermediate' 
+        type: 'tech stacks'
     },
     { 
         logo: js, 
         alt: 'JavaScript Logo', 
-        name: 'JavaScript', 
-        level: 'Advanced' 
+        type: 'tech stacks'
     },
     { 
         logo: react, 
         alt: 'ReactJS Logo', 
-        name: 'React', 
-        level: 'Intermediate' 
+        type: 'tech stacks'
     },
     { 
         logo: tailwindCSS, 
         alt: 'TailwindCSS Logo', 
-        name: 'TailwindCSS', 
-        level: 'Intermediate' 
+        type: 'tech stacks'
     },
     { 
         logo: python, 
         alt: 'Python Logo', 
-        name: 'Python', 
-        level: 'Advanced' 
+        type: 'tech stacks'
     },
     { 
         logo: php, 
         alt: 'PHP Logo', 
-        name: 'PHP', 
-        level: 'Intermediate' 
-    },
-    { 
-        logo: wordpress, 
-        alt: 'WordPress Logo', 
-        name: 'WordPress', 
-        level: 'Intermediate' 
-    },
-    { 
-        logo: figma, 
-        alt: 'Figma Logo', 
-        name: 'Figma', 
-        level: 'Beginner' 
+        type: 'tech stacks'
     },
     { 
         logo: git, 
         alt: 'Git Logo', 
-        name: 'Git', 
-        level: 'Intermediate' 
+        type: 'tools'
+    },
+    { 
+        logo: postman, 
+        alt: 'Postman Logo', 
+        type: 'tools'
+    },
+    { 
+        logo: npm, 
+        alt: 'NPM Logo', 
+        type: 'tools'
+    },
+    { 
+        logo: figma, 
+        alt: 'Figma Logo', 
+        type: 'tools'
+    },
+    { 
+        logo: wordpress, 
+        alt: 'WordPress Logo', 
+        type: 'tools'
     },
     { 
         logo: vscode, 
         alt: 'Visual Studio Code Logo', 
-        name: 'VS Code', 
-        level: 'Advanced' 
+        type: 'tools'
     },
     { 
         logo: kali, 
         alt: 'Kali Linux Logo', 
-        name: 'Kali Linux', 
-        level: 'Beginner' 
-    }
+        type: 'tools'
+    },
 ];
 
 export const sections = [
@@ -252,5 +236,5 @@ export const social = [
         name: "Instagram",
         icon: <FaInstagram />,
         link: "https://www.instagram.com/liyaaaaaan_/"
-    }
+    },
 ];

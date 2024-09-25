@@ -1,9 +1,12 @@
-// About.jsx
 import React from "react";
 import ProfilePic from "../assets/about-pic.jpg";
-import { social } from "../portfolio"; // Import sections and social from portfolio
+import { social, skills } from "../portfolio"; // Import sections, social, and skills from portfolio
 
 const About = () => {
+    // Filter skills by type
+    const techStacks = skills.filter(skill => skill.type === 'tech stacks');
+    const tools = skills.filter(skill => skill.type === 'tools');
+
     return (
         <div id="about" className="min-h-screen my-20 bg-[#000300] text-white">
             <div className="mx-auto h-auto flex flex-col md:flex-row items-center px-10 gap-5">
@@ -54,8 +57,46 @@ const About = () => {
                     </div>
                 </div>
             </div>
+
+            {/* Skills Section */}
+            <div className="mt-20 mx-auto mb-50">
+                <h2 className="text-2xl sm:text-3xl md:text-[30px] lg:text-[38px] font-semibold text-center text-white mb-8">
+                    <span className="text-[#89CFF0] text-2xl sm:text-3xl md:text-[30px] lg:text-[38px]">Professional </span> 
+                    Skillset
+                </h2>
+
+                {/* Tech Stacks Section */}
+                <div className="my-20 mx-auto max-w-[1100px]">
+                    <div className="flex items-center mb-5 mx-10">
+                        <hr className="flex border-t-5 border-[#89CFF0] mr-4 w-[100px]" />
+                        <h3 className="text-2xl font-medium">• Tech Stacks</h3>
+                    </div>
+                    <div className="flex justify-center flex-wrap md:mx-20">
+                        {techStacks.map((skill) => (
+                            <div key={skill.alt} className="flex flex-col items-center mx-4 my-4">
+                                <img src={skill.logo} alt={skill.alt} className="w-[100px] h-[100px]" />
+                            </div>
+                        ))}
+                    </div>
+                </div>
+
+                {/* Tools Section */}
+                <div className="my-20 mx-auto max-w-[1100px]">
+                    <div className="flex items-center mb-5 mx-10">
+                        <hr className="flex border-t-5 border-[#89CFF0] mr-4 w-[100px]" />
+                        <h3 className="text-2xl font-medium">• Tools</h3>
+                    </div>
+                    <div className="flex justify-center flex-wrap md:mx-20">
+                        {tools.map((skill) => (
+                            <div key={skill.alt} className="flex flex-col items-center mx-4 my-4">
+                                <img src={skill.logo} alt={skill.alt} className="w-[100px] h-[100px]" />
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </div>
         </div>
     );
-}
+};
 
 export default About;
