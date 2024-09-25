@@ -1,6 +1,7 @@
 // For social media links
 import { FaGithub, FaLinkedin, FaFacebook, FaInstagram } from "react-icons/fa";
 
+import profile from "./assets/profile.png";
 // For Timeline in Education Page
 import pup from "./assets/images/pup-logo.png"; 
 import olfu from "./assets/images/olfu-logo.png";
@@ -13,6 +14,7 @@ import html from './assets/skills-images/html.png';
 import css from './assets/skills-images/css.png';
 import js from './assets/skills-images/js.png';
 import react from './assets/skills-images/reactjs.png';
+import vite from './assets/skills-images/vite.png';
 import php from './assets/skills-images/php.png';
 import tailwindCSS from './assets/skills-images/tailwindCSS.png';
 import python from './assets/skills-images/python.png';
@@ -47,6 +49,15 @@ export const navLinks = [
       name: "Portfolio",
       path: "/Portfolio"
     },
+];
+
+export const aboutCard = [
+    {
+        profile: profile,
+        greeting: "Hello there!👋",
+        name: "Lee Anne",
+        location: "Manila, Philippines",
+    }
 ];
 
 // For Timeline in Education Page
@@ -151,6 +162,11 @@ export const skills = [
     { 
         logo: react, 
         alt: 'ReactJS Logo', 
+        type: 'tech stacks'
+    },
+    {
+        logo: vite,
+        alt: 'Vite Logo',
         type: 'tech stacks'
     },
     { 
