@@ -80,7 +80,7 @@ const Education = () => {
         </div>
       </div>
 
-      <div className="max-w-[1000px] mx-auto mt-40" ref={timelineRef}>
+      <div className="max-w-900px] mx-auto mt-40" ref={timelineRef}>
         <h2 className="text-2xl sm:text-3xl md:text-[30px] lg:text-[38px] font-semibold text-center text-white mb-8">
           <span className="text-[#89CFF0] text-2xl sm:text-3xl md:text-[30px] lg:text-[38px]">Educational </span> 
           Background 👩‍🏫

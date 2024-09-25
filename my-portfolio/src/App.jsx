@@ -6,6 +6,7 @@ import Education from './pages/Education';
 import Skills from './pages/Skills';
 import Header from './components/Header';
 import Footer from './components/Footer';
+import './App.css'; 
 
 const App = () => {
   return (

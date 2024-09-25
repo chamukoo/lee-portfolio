@@ -62,7 +62,8 @@ export const navLinks = [
       path: "/Contact"
     }
 ];
-  
+
+// For Timeline in Education Page
 export const timelineElements = [
     {
         logo: pup,
@@ -101,6 +102,7 @@ export const timelineElements = [
     }
 ];
 
+// For Certifications in Education Page
 export const certifications = [
     {
         cover: cisco,
@@ -134,7 +136,7 @@ export const certifications = [
         title: "Programming with JavaScript",
         issuer: "Meta",
         date: "September 23, 2024",
-        certificate: 'https://coursera.org/share/38424a84a4c6ed14eeaa39093ea7f3eb',
+        certificate: 'https://drive.google.com/file/d/1FRgh2tSqtLK9d1s6FR9-JvmDxrj_SYT9/view?usp=drive_link',
         link: "https://coursera.org/share/38424a84a4c6ed14eeaa39093ea7f3eb",
         skillsGained: [
             "Javascript",
