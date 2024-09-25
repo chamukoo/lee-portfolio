@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { navLinks } from "../portfolio"; // Import navLinks from portfolio.jsx
+import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import Logo from "../assets/lee-logo.png"; // Adjust the path to your logo
+import { navLinks } from "../portfolio"; // Import navLinks from portfolio.jsx
 
 const Header = () => {
   const [nav, setNav] = useState(false);
@@ -11,8 +12,8 @@ const Header = () => {
   };
 
   return (
-    <header className="sticky top-0 z-50 flex justify-between items-center p-4 bg-[#000300] text-white">
-      <img src={Logo} alt="Logo" className="w-[150px] h-auto" />
+    <header className="sticky top-0 z-50 flex justify-between items-center p-4 bg-[#000300] text-white mx-15">
+      <img src={Logo} alt="Logo" className="w-[200px] md:w-[240px] lg:w-[280px] h-auto" />
 
       <ul className="hidden md:flex">
         {navLinks.map((link, index) => (
@@ -25,7 +26,7 @@ const Header = () => {
       </ul>
 
       <div onClick={toggleNav} className="block md:hidden">
-        <span>{nav ? "Close" : "Menu"}</span>
+        {nav ? <AiOutlineClose size={25} /> : <AiOutlineMenu size={25} />}
       </div>
 
       <div
