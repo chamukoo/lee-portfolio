@@ -141,6 +141,19 @@ export const certifications = [
             "Object-Oriented Programming",
         ]
     },
+    {
+        cover: meta,
+        title: "Version Control",
+        issuer: "Meta",
+        date: "September 26, 2024",
+        certificate: 'https://drive.google.com/file/d/1BvRhyfthVSnJZaan-IiYOPeWEpcPLaAt/view?usp=drive_link',
+        link: "https://www.coursera.org/account/accomplishments/verify/6N4U2DALR9YA",
+        skillsGained: [
+            "Git",
+            "GitHub",
+            "Bash Commands",
+        ]
+    }
 ];
 
 export const skills = [
@@ -241,7 +254,7 @@ export const social = [
     {
         name: "LinkedIn",
         icon: <FaLinkedin />,
-        link: "https://www.linkedin.com/in/lee-anne-angeles-673124312/"
+        link: "https://www.linkedin.com/in/leeanneangeles/"
     },
     {
         name: "Facebook",

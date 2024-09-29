@@ -10,7 +10,7 @@ const About = () => {
   return (
     <div id="about" className="min-h-screen my-20 bg-[#000300] text-white">
       {/* About Card Section */}
-      <div className="max-w-[1100px] mx-auto mt-40">
+      <div className="max-w-[1100px] mx-auto my-20">
         <div className="flex flex-wrap justify-center">
           {aboutCard.map((aboutCard, index) => (
             <div
@@ -63,7 +63,7 @@ const About = () => {
       </div>
 
       {/* About Me Content */}
-      <div className="mt-40 mx-auto max-w-[1100px] h-[100vh] flex flex-col justify-center">
+      <div className="my-10 mx-auto max-w-[1100px] h-auto flex flex-col justify-center">
         <div className="mb-2 px-10 font-bold">
           <TextAnim
             name="Get To Know Me!"
