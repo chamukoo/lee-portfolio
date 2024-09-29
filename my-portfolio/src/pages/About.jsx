@@ -9,9 +9,9 @@ const About = () => {
   const tools = skills.filter((skill) => skill.type === 'tools');
 
   return (
-    <div id="about" className="min-h-screen my-20 bg-[#000300] text-white">
+    <div id="about" className="min-h-screen max-w-[1100px] my-20 mx-auto bg-[#000300] text-white">
       {/* About Card Section */}
-      <div className="max-w-[1100px] bg-[#1a1a1a] mx-auto my-20">
+      <div className="mx-4 md:mx-6 sm:mx-8 lg:mx-10 bg-[#1a1a1a] my-20 rounded-lg">
         <div className="flex mb-10 items-center mx-10 mb-10 pt-10">
           <LinearGradient gradient={['to left', '#ff68f0 , #89CFF0']} className="text-2xl sm:text-3xl md:text-[25px] lg:text-[30px] font-bold text-[#89CFF0] text-center">
             About Me
@@ -85,14 +85,17 @@ const About = () => {
       </div>
 
       {/* Contacts Section */}
-      <div className="my-20 mx-auto max-w-[1100px] h-auto flex flex-col justify-center">
-        <h2 className="text-2xl sm:text-3xl md:text-[25px] lg:text-[30px] font-semibold text-[#89CFF0] mb-5 mx-10">
-          Contacts
-        </h2>
-        <div className="flex justify-startg flex-wrap md:justify-start lg:justify-center">
+      <div className="mx-4 md:mx-6 sm:mx-8 lg:mx-10 my-20 py-5 bg-[#1a1a1a] rounded-lg">
+        <div className="flex items-center mx-10 py-5">
+          <LinearGradient gradient={['to left', '#ff68f0 , #89CFF0']} className="text-2xl sm:text-2xl md:text-[24px] lg:text-[28px] font-bold text-[#89CFF0] text-center">
+            Contact
+          </LinearGradient>
+          <hr className="flex border-t-5 border-[#89CFF0] ml-4 w-[200px]" />
+        </div>
+        <div className="flex justify-start flex-wrap px-10 md:justify-start md:px-5 lg:justify-center">
           {contacts.map((contact, index) => (
-            <div key={index} className="flex items-center mx-4 my-4">
-              <div className="px-4">
+            <div key={index} className="flex items-center mx-2 my-4 hover:bg-gradient-to-r from-[#ff68f0] to-[#89CFF0] p-2 rounded-lg transition-all duration-300">
+              <div className="px-2">
                 <img
                   src={contact.logo}
                   alt={contact.title}
@@ -106,7 +109,7 @@ const About = () => {
                   href={contact.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-xl font-bold tracking-wide pt-2 text-white hover:text-[#89CFF0]"
+                  className="text-lg font-bold tracking-wide pt-2 text-white hover:text-[#000]"
                 >
                   {contact.username}
                 </a>
