@@ -1,6 +1,7 @@
 import React from "react";
-import { social, skills, contacts } from "../portfolio"; // Import sections, social, and skills from portfolio
+import { skills, contacts } from "../portfolio"; // Import sections, social, and skills from portfolio
 import profile from "../assets/profile.png";
+import { LinearGradient } from 'react-text-gradients'
 
 const About = () => {
   // Filter skills by type
@@ -11,12 +12,18 @@ const About = () => {
     <div id="about" className="min-h-screen my-20 bg-[#000300] text-white">
       {/* About Card Section */}
       <div className="max-w-[1100px] bg-[#1a1a1a] mx-auto my-20">
+        <div className="flex mb-10 items-center mx-10 mb-10 pt-10">
+          <LinearGradient gradient={['to left', '#ff68f0 , #89CFF0']} className="text-2xl sm:text-3xl md:text-[25px] lg:text-[30px] font-bold text-[#89CFF0] text-center">
+            About Me
+          </LinearGradient>
+          <hr className="flex border-t-5 border-[#89CFF0] ml-4 w-[200px]" />
+        </div>
         <div className="flex flex-wrap justify-center mx-10">
-          <div className="w-full md:w-1/3 flex justify-center items-center">
+          <div className="w-full p-5 md:w-1/3 flex justify-center items-center">
             <img src={profile} alt="Lee Anne Angeles" className="rounded-full border-4 border-[#89CFF0] mb-5 md:mb-0" />
           </div>
-          <div className="w-full p-5 md:p-10 md:w-2/3 flex flex-col justify-center items-center md:items-start">
-            <p className="text-white text-sm font-regular mb-2 px-4 md:px-0">
+          <div className="w-full p-5 md:w-2/3 flex flex-col justify-center items-center md:items-start">
+            <p className="text-white text-sm font-regular mb-2 md:text-md">
               Hello! 👋 I'm Lee Anne, a dedicated Computer Engineering student passionate about both web development and design. Throughout my college journey, I’ve gained proficiency in tools such as HTML, CSS, JavaScript, ReactJS, and Tailwind CSS, allowing me to create dynamic, responsive web applications. I also use Figma for wireframing and prototyping, turning design concepts into reality.
               <br /><br />
               In addition to web development, I have a strong interest in networking, which led me to choose network administration as my college elective. My enthusiasm deepened through hands-on experience in Cisco courses, where I found learning about networks both engaging and rewarding.
@@ -70,7 +77,7 @@ const About = () => {
                   className="w-[75px] h-[75px] transition-transform duration-300 hover:scale-110"
                 />
                 {/* Display skill name below the image */}
-                <p className="mt-3 text-white text-md font-regular">{skill.name}</p>
+                <p className="mt-3 text-white text-md font-regular tracking-wider">{skill.name}</p>
               </div>
             ))}
           </div>
@@ -82,7 +89,7 @@ const About = () => {
         <h2 className="text-2xl sm:text-3xl md:text-[25px] lg:text-[30px] font-semibold text-[#89CFF0] mb-5 mx-10">
           Contacts
         </h2>
-        <div className="flex justify-start flex-wrap md:justify-start lg:justify-center">
+        <div className="flex justify-startg flex-wrap md:justify-start lg:justify-center">
           {contacts.map((contact, index) => (
             <div key={index} className="flex items-center mx-4 my-4">
               <div className="px-4">
