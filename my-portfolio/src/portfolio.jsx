@@ -28,6 +28,11 @@ import wordpress from './assets/skills-images/wordpress.png';
 import vscode from './assets/skills-images/vscode.png';
 import kali from './assets/skills-images/kali.png';
 
+// For Contacts in ABout page
+import email from './assets/contact-images/email.png';
+import linkedin from './assets/contact-images/linkedin.png';
+import github from './assets/contact-images/github.png';
+
 import cisco from './assets/cisco.png';
 import meta from './assets/meta.png';
 
@@ -159,78 +164,99 @@ export const certifications = [
 export const skills = [
     { 
         logo: html, 
-        alt: 'HTML Logo', 
+        name: 'HTML', 
         type: 'tech stacks'
     },
     { 
         logo: css, 
-        alt: 'CSS Logo', 
+        name: 'CSS', 
         type: 'tech stacks'
     },
     { 
         logo: js, 
-        alt: 'JavaScript Logo', 
+        name: 'JavaScript', 
         type: 'tech stacks'
     },
     { 
         logo: react, 
-        alt: 'ReactJS Logo', 
+        name: 'React', 
         type: 'tech stacks'
     },
     {
         logo: vite,
-        alt: 'Vite Logo',
+        name: 'Vite',
         type: 'tech stacks'
     },
     { 
         logo: tailwindCSS, 
-        alt: 'TailwindCSS Logo', 
+        name: 'TailwindCSS', 
         type: 'tech stacks'
     },
     { 
         logo: python, 
-        alt: 'Python Logo', 
+        name: 'Python', 
         type: 'tech stacks'
     },
     { 
         logo: php, 
-        alt: 'PHP Logo', 
+        name: 'PHP', 
         type: 'tech stacks'
     },
     { 
         logo: git, 
-        alt: 'Git Logo', 
+        name: 'Git', 
         type: 'tools'
     },
     { 
         logo: postman, 
-        alt: 'Postman Logo', 
+        name: 'Postman', 
         type: 'tools'
     },
     { 
         logo: npm, 
-        alt: 'NPM Logo', 
+        name: 'NPM', 
         type: 'tools'
     },
     { 
         logo: figma, 
-        alt: 'Figma Logo', 
+        name: 'Figma', 
         type: 'tools'
     },
     { 
         logo: wordpress, 
-        alt: 'WordPress Logo', 
+        name: 'WordPress', 
         type: 'tools'
     },
     { 
         logo: vscode, 
-        alt: 'Visual Studio Code Logo', 
+        name: 'VS Code', 
         type: 'tools'
     },
     { 
         logo: kali, 
-        alt: 'Kali Linux Logo', 
+        name: 'Kali Linux', 
         type: 'tools'
+    },
+];
+
+export const contacts = [
+    {
+        logo: email,
+        title: "Message me on:",
+        username: "leeangeles2@gmail.com",
+        link: "mailto: leeangeles2@gmail.com",
+    },
+    {
+        logo: linkedin,
+        title: "My LinkedIn Profile:",
+        username: "/in/leeanneangeles",
+        link: "https://www.linkedin.com/in/leeanneangeles/",
+    },
+    {
+        logo: github,
+        title: "My GitHub Profile:",
+        username: "/chamukoo",
+        link: "https://github.com/chamukoo"
     },
 ];
 

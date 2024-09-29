@@ -60,7 +60,7 @@ const Education = () => {
 
   return (
     <div className="min-h-screen my-20 bg-[#000300]" id="education">
-      <div className="mx-auto h-auto flex flex-col sm:flex-col md:flex-row items-center px-10 gap-5 mb-20">
+      <div className="max-w-[1200px] mx-auto h-auto flex flex-col sm:flex-col md:flex-row items-center px-10 gap-5 mb-20">
         <div className="w-full sm:flex-col md:flex-col justify-center md:justify-start slide-in-left">
           <img
             ref={imageRef}
