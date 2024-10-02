@@ -1,5 +1,5 @@
 // For social media links
-import { FaGithub, FaLinkedin, FaFacebook, FaInstagram } from "react-icons/fa";
+import { FaEnvelope, FaGithub, FaLinkedin, FaFacebook, FaInstagram } from "react-icons/fa";
 
 import profile from "./assets/profile.png";
 // For Timeline in Education Page
@@ -125,7 +125,7 @@ export const certifications = [
         title: "Introduction to Front-End Development",
         issuer: "Meta",
         date: "September 11, 2024",
-        certificate: 'https://drive.google.com/file/d/1NJcoxoNGW420ZdqV6X-KQf-LdGKKvmHK/view?usp=drive_link',
+        certificate: 'https://www.coursera.org/account/accomplishments/certificate/7YW9CPR3EX42',
         link: "https://www.coursera.org/account/accomplishments/verify/7YW9CPR3EX42",
         skillsGained: [
             "HTML",
@@ -138,7 +138,7 @@ export const certifications = [
         title: "Programming with JavaScript",
         issuer: "Meta",
         date: "September 23, 2024",
-        certificate: 'https://drive.google.com/file/d/1FRgh2tSqtLK9d1s6FR9-JvmDxrj_SYT9/view?usp=drive_link',
+        certificate: 'https://www.coursera.org/account/accomplishments/certificate/UCMXY7TVZB7K',
         link: "https://coursera.org/share/38424a84a4c6ed14eeaa39093ea7f3eb",
         skillsGained: [
             "Javascript",
@@ -151,12 +151,26 @@ export const certifications = [
         title: "Version Control",
         issuer: "Meta",
         date: "September 26, 2024",
-        certificate: 'https://drive.google.com/file/d/1BvRhyfthVSnJZaan-IiYOPeWEpcPLaAt/view?usp=drive_link',
+        certificate: 'https://www.coursera.org/account/accomplishments/certificate/6N4U2DALR9YA',
         link: "https://www.coursera.org/account/accomplishments/verify/6N4U2DALR9YA",
         skillsGained: [
             "Git",
             "GitHub",
             "Bash Commands",
+        ]
+    },
+    {
+        cover: meta,
+        title: "HTML and CSS in depth",
+        issuer: "Meta",
+        date: "October 2, 2024",
+        certificate: 'https://www.coursera.org/account/accomplishments/certificate/OBTE35GZL2M7',
+        link: "https://www.coursera.org/account/accomplishments/verify/OBTE35GZL2M7",
+        skillsGained: [
+            "HTML",
+            "CSS",
+            "Responsive Design",
+            "Debugging",
         ]
     }
 ];
@@ -260,18 +274,12 @@ export const contacts = [
     },
 ];
 
-export const sections = [
+export const footer = [
     {
-        title: "Quick Links",
-        items: ["Home", "About", "Skills", "Portfolio", "Contact"]
+        name: "Email",
+        icon: <FaEnvelope />,
+        link: "mailto: leeangeles2@gmail.com"
     },
-    {
-        title: "Contact",
-        items: ["+63 938 332 6648", "leeangeles2@gmail.com", "Capinpin St., Morong", "Rizal 1960, Philippines"]
-    }
-];
-
-export const social = [
     {
         name: "Github",
         icon: <FaGithub />,
