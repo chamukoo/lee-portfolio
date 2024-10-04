@@ -37,6 +37,13 @@ import cisco from './assets/cisco.png';
 import meta from './assets/meta.png';
 import google from './assets/google.png';
 
+import certificate1 from './assets/certificates/certificate1.pdf';
+import certificate2 from './assets/certificates/certificate2.pdf';
+import certificate3 from './assets/certificates/certificate3.pdf';
+import certificate4 from './assets/certificates/certificate4.pdf';
+import certificate5 from './assets/certificates/certificate5.pdf';
+import certificate6 from './assets/certificates/certificate6.pdf';
+
 
 export const navLinks = [
     {
@@ -112,7 +119,7 @@ export const certifications = [
         title: "CCNA: Switching, Routing, and Wireless Essentials",
         issuer: "Cisco",
         date: "July 20, 2024",
-        certificate: 'https://drive.google.com/file/d/1f-BaCIcczPmhlIIPp62HRoo73ZbyOndr/view?usp=drive_link',
+        certificate: certificate1,
         link: "https://www.credly.com/badges/eaa9323e-80fe-48e6-8a85-48a5fd5bbc4b/public_url",
         skillsGained: [
             "Routing",
@@ -126,7 +133,7 @@ export const certifications = [
         title: "Introduction to Front-End Development",
         issuer: "Meta",
         date: "September 11, 2024",
-        certificate: 'https://www.coursera.org/account/accomplishments/certificate/7YW9CPR3EX42',
+        certificate: certificate2,
         link: "https://www.coursera.org/account/accomplishments/verify/7YW9CPR3EX42",
         skillsGained: [
             "HTML",
@@ -139,7 +146,7 @@ export const certifications = [
         title: "Programming with JavaScript",
         issuer: "Meta",
         date: "September 23, 2024",
-        certificate: 'https://www.coursera.org/account/accomplishments/certificate/UCMXY7TVZB7K',
+        certificate: certificate3,
         link: "https://coursera.org/share/38424a84a4c6ed14eeaa39093ea7f3eb",
         skillsGained: [
             "Javascript",
@@ -152,7 +159,7 @@ export const certifications = [
         title: "Version Control",
         issuer: "Meta",
         date: "September 26, 2024",
-        certificate: 'https://www.coursera.org/account/accomplishments/certificate/6N4U2DALR9YA',
+        certificate: certificate4,
         link: "https://www.coursera.org/account/accomplishments/verify/6N4U2DALR9YA",
         skillsGained: [
             "Git",
@@ -165,7 +172,7 @@ export const certifications = [
         title: "HTML and CSS in depth",
         issuer: "Meta",
         date: "October 2, 2024",
-        certificate: 'https://www.coursera.org/account/accomplishments/certificate/OBTE35GZL2M7',
+        certificate: certificate5,
         link: "https://www.coursera.org/account/accomplishments/verify/OBTE35GZL2M7",
         skillsGained: [
             "HTML",
@@ -179,7 +186,7 @@ export const certifications = [
         title: "Foundations of Cybersecurity",
         issuer: "Google",
         date: "October 3, 2024",
-        certificate: 'https://www.coursera.org/account/accomplishments/certificate/9UH11WBPQUXW',
+        certificate: certificate6,
         link: "https://www.coursera.org/account/accomplishments/verify/9UH11WBPQUXW",
         skillsGained: [
             "Cybersecurity",
