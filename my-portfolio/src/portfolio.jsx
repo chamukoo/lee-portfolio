@@ -35,6 +35,7 @@ import github from './assets/contact-images/github.png';
 
 import cisco from './assets/cisco.png';
 import meta from './assets/meta.png';
+import google from './assets/google.png';
 
 
 export const navLinks = [
@@ -171,6 +172,19 @@ export const certifications = [
             "CSS",
             "Responsive Design",
             "Debugging",
+        ]
+    },
+    {
+        cover: google,
+        title: "Foundations of Cybersecurity",
+        issuer: "Google",
+        date: "October 3, 2024",
+        certificate: 'https://www.coursera.org/account/accomplishments/certificate/9UH11WBPQUXW',
+        link: "https://www.coursera.org/account/accomplishments/verify/9UH11WBPQUXW",
+        skillsGained: [
+            "Cybersecurity",
+            "Network Security",
+            "Cryptography",
         ]
     }
 ];
