@@ -9,7 +9,7 @@ const About = () => {
   const tools = skills.filter((skill) => skill.type === 'tools');
 
   return (
-    <div id="about" className="min-h-screen max-w-[1100px] my-20 mx-auto bg-[#000300] text-white">
+    <div id="about" className="min-h-screen max-w-[1200px] my-20 mx-auto bg-[#000300] text-white">
       {/* About Card Section */}
       <div className="mx-4 md:mx-6 sm:mx-8 lg:mx-10 bg-[#1a1a1a] my-20 rounded-lg">
         <div className="flex mb-10 items-center mx-10 mb-10 pt-10">
@@ -35,7 +35,7 @@ const About = () => {
       </div>
 
       {/* Skills Section */}
-      <div className="pt-20 my-20 mx-auto max-w-[1100px] h-auto flex flex-col justify-center">
+      <div className="pt-20 my-20 mx-auto flex flex-col justify-center">
         <h2 className="text-2xl sm:text-3xl md:text-[25px] lg:text-[30px] font-semibold text-white mb-5 mx-10">
           <span className="text-[#89CFF0] text-2xl sm:text-3xl md:text-[25px] lg:text-[30px]">Professional </span>
           Skillset
@@ -49,7 +49,7 @@ const About = () => {
           </div>
           <div className="flex justify-center flex-wrap">
             {techStacks.map((skill) => (
-              <div key={skill.name} className="flex flex-col items-center mx-4 my-4">
+              <div key={skill.name} className="flex flex-col items-center m-2 p-5">
                 <img
                   src={skill.logo}
                   alt={skill.name}
@@ -70,7 +70,7 @@ const About = () => {
           </div>
           <div className="flex justify-center flex-wrap">
             {tools.map((skill) => (
-              <div key={skill.name} className="flex flex-col items-center mx-4 my-4">
+              <div key={skill.name} className="flex flex-col items-center m-2 p-5">
                 <img
                   src={skill.logo}
                   alt={skill.name}

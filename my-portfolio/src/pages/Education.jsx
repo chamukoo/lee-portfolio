@@ -120,7 +120,7 @@ const Education = () => {
                 <img 
                   src={element.logo} 
                   alt={`${element.school} Logo`} 
-                  className="w-10 h-10 md:w-10 md:h-10"
+                  className="w-10 h-10"
                 />
               }
             >

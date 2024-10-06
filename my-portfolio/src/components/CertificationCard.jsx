@@ -3,7 +3,7 @@ import { FaExternalLinkAlt } from "react-icons/fa";
 
 const CertificationCard = ({ cert }) => {
   return (
-    <div className="certification-item bg-[#1a1a1a] rounded-lg shadow-lg transition-transform duration-300 group hover:scale-105 hover:border-[#89CFF0] hover:border-4">
+    <div className="certification-item bg-[#1a1a1a] rounded-lg shadow-lg float-in transition-transform duration-300 group hover:scale-105 hover:border-[#89CFF0] hover:border-4">
       <div className="relative">
         <img
           src={cert.cover}
