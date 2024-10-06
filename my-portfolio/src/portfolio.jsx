@@ -121,12 +121,6 @@ export const certifications = [
         date: "July 20, 2024",
         certificate: certificate1,
         link: "https://www.credly.com/badges/eaa9323e-80fe-48e6-8a85-48a5fd5bbc4b/public_url",
-        skillsGained: [
-            "Routing",
-            "Switching Protocols",
-            "Network Fundamentals",
-            "IP Services",
-        ]
     },
     {
         cover: meta,
@@ -135,11 +129,6 @@ export const certifications = [
         date: "September 11, 2024",
         certificate: certificate2,
         link: "https://www.coursera.org/account/accomplishments/verify/7YW9CPR3EX42",
-        skillsGained: [
-            "HTML",
-            "CSS",
-            "Web Development",
-        ]
     },
     {
         cover: meta,
@@ -148,11 +137,6 @@ export const certifications = [
         date: "September 23, 2024",
         certificate: certificate3,
         link: "https://coursera.org/share/38424a84a4c6ed14eeaa39093ea7f3eb",
-        skillsGained: [
-            "Javascript",
-            "Unit Testing with Jest",
-            "Object-Oriented Programming",
-        ]
     },
     {
         cover: meta,
@@ -161,11 +145,6 @@ export const certifications = [
         date: "September 26, 2024",
         certificate: certificate4,
         link: "https://www.coursera.org/account/accomplishments/verify/6N4U2DALR9YA",
-        skillsGained: [
-            "Git",
-            "GitHub",
-            "Bash Commands",
-        ]
     },
     {
         cover: meta,
@@ -174,12 +153,6 @@ export const certifications = [
         date: "October 2, 2024",
         certificate: certificate5,
         link: "https://www.coursera.org/account/accomplishments/verify/OBTE35GZL2M7",
-        skillsGained: [
-            "HTML",
-            "CSS",
-            "Responsive Design",
-            "Debugging",
-        ]
     },
     {
         cover: google,
@@ -188,11 +161,6 @@ export const certifications = [
         date: "October 3, 2024",
         certificate: certificate6,
         link: "https://www.coursera.org/account/accomplishments/verify/9UH11WBPQUXW",
-        skillsGained: [
-            "Cybersecurity",
-            "Network Security",
-            "Cryptography",
-        ]
     }
 ];
 
