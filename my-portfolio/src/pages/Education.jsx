@@ -64,10 +64,10 @@ const Education = () => {
       <div className="mx-4 md:mx-6 sm:mx-8 lg:mx-10 bg-[#1a1a1a] my-20 rounded-lg">
 
         <div className="flex items-center mx-10 pt-10">
-          <LinearGradient gradient={['to left', '#ff68f0 , #89CFF0']} className="text-2xl sm:text-3xl md:text-[25px] lg:text-[30px] font-bold text-[#89CFF0] text-center">
+          <LinearGradient gradient={['to left', '#ff68f0 , #89CFF0']} className="text-xl sm:text-2xl md:text-[20px] lg:text-[25px] font-bold text-[#89CFF0] text-center">
             Education
           </LinearGradient>
-          <hr className="flex border-t-5 border-[#89CFF0] ml-4 w-[200px]" />
+          <hr className="flex border-t-5 border-[#89CFF0] ml-4 w-[150px] md:w-[200px]" />
         </div>
 
         <div className="flex flex-wrap justify-center mx-10">
@@ -76,33 +76,31 @@ const Education = () => {
               ref={imageRef}
               src={education}
               alt="Education Overview"
-              className="w-full h-auto transform transition-transform duration-300 ease-in-out hover:translate-x-0 hover:-translate-y-4"
+              className="w-full h-auto transform transition-transform duration-300 ease-in-out"
             />
           </div>
 
           <div className="w-full p-5 md:w-2/3 flex flex-col justify-center items-center md:items-start slide-in-right">
-            <h2 className="mb-4 text-[#89CFF0] text-xl font-semibold md:text-2xl">
+            <h2 className="mb-4 text-[#89CFF0] text-lg sm:text-xl md:text-2xl font-semibold">
               Basic Qualification and Certifications
             </h2>
-            <p className="text-gray-400 text-sm font-regular mb-2 md:text-md lg:text-lg">
+            <p className="text-gray-400 text-sm md:text-md lg:text-lg font-regular mb-2">
               Welcome to my Education page! 🙋‍♀️ Here, you'll find a summary of my academic qualifications and the journey that has shaped my career. Education is central to my growth, and I’m dedicated to continuous learning and staying updated with the latest advancements in technology. This page showcases the key milestones of my educational journey and my commitment to lifelong learning.
             </p>
           </div>
-
         </div>
       </div>
 
-      <div className="max-w-1000px] mx-auto mt-40" ref={timelineRef}>
-        <h2 className="text-2xl sm:text-3xl md:text-[30px] lg:text-[38px] font-semibold text-center text-white mb-8">
-          <span className="text-[#89CFF0] text-2xl sm:text-3xl md:text-[30px] lg:text-[38px]">Educational </span> 
-          Background 👩‍🏫
+      <div className="max-w-1000px mx-auto mt-20" ref={timelineRef}>
+        <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-center text-white mb-8">
+          <span className="text-[#89CFF0]">Educational </span> Background 👩‍🏫
         </h2>
         <VerticalTimeline lineColor={lineColor}>
           {timelineElements.map((element, index) => (
             <VerticalTimelineElement
               key={index}
               className="vertical-timeline-element"
-              date={<span style={{ color: lineColor, fontSize: '14px', textAlign: 'center', display: 'block' }}>{element.date}</span>}
+              date={<span style={{ color: lineColor, fontSize: '12px', textAlign: 'center', display: 'block' }}>{element.date}</span>}
               contentStyle={{
                 boxShadow: `0px 0px 6px ${lineColor}`,
                 backgroundColor: "transparent",
@@ -124,65 +122,54 @@ const Education = () => {
                 <img 
                   src={element.logo} 
                   alt={`${element.school} Logo`} 
-                  className="w-10 h-10 hover:float-effect"
+                  className="w-8 h-8 md:w-10 md:h-10 hover:float-effect"
                 />
               }
             >
-              <h3 className="text-md font-semibold">{element.school}</h3>
-              <h4 className="text-sm text-[#89CFF0]">{element.level}</h4>
-              <h5 className="text-sm text-gray-300 mt-1">{element.location}</h5>
+              <h3 className="text-sm sm:text-md font-semibold">{element.school}</h3>
+              <h4 className="text-xs sm:text-sm text-[#89CFF0]">{element.level}</h4>
+              <h5 className="text-xs sm:text-sm text-gray-300 mt-1">{element.location}</h5>
             </VerticalTimelineElement>
           ))}
         </VerticalTimeline>
         
-        <div className="max-w-[1000px] mx-auto mt-40" ref={certificationsRef}>
-          <h2 className="text-2xl sm:text-3xl md:text-[30px] lg:text-[38px] font-semibold text-center text-white mb-8">
+        <div className="mx-auto mt-20" ref={certificationsRef}>
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl font-semibold text-center text-white mb-8">
             Certifications 🎖️
           </h2>
-          <div className="flex flex-wrap justify-center gap-5 m-10">
+          <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 my-10 mx-10">
             {certifications.map((cert, index) => (
               <div
                 key={index}
-                className="certification-item bg-[#1a1a1a] rounded-lg shadow-lg flex flex-col sm:flex-row sm:max-w-[600px] lg:max-w-[1000px] w-full px-3 py-5 transition-transform duration-300 group hover:scale-105"
+                className="certification-item bg-[#1a1a1a] rounded-lg shadow-lg transition-transform duration-300 group hover:scale-105 hover:border-[#89CFF0] hover:border-4"
               >
-                <div className="relative flex-shrink-0 sm:w-[40%]">
+                <div className="relative">
                   <img
                     src={cert.cover}
                     alt={`${cert.title} Certificate`}
-                    className="w-full h-50 sm:h-full object-cover rounded-lg"
+                    className="w-full h-auto object-cover rounded-t-lg"
                   />
-                  <div className="absolute inset-0 bg-[#89CFF0] bg-opacity-80 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg">
+                </div>
+                <div className="p-5 text-center">
+                  <h3 className="text-md sm:text-lg font-medium text-[#89CFF0] mb-2">{cert.title}</h3>
+                  <p className="text-xs sm:text-sm text-white font-regular mb-2">ᯓ★ Issued by {cert.issuer} on {cert.date}</p>
+                  <div className="flex justify-center space-x-5 text-sm text-white font-semibold tracking-wide">
+                    <a
+                      href={cert.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Verify
+                    </a>
                     <a
                       href={cert.certificate}
-                      className="text-black text-lg font-semibold hover:text-blue-700 flex items-center justify-center"
+                      className="flex items-center"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
                       View Certificate
                       <FaExternalLinkAlt className="ml-2" />
                     </a>
-                  </div>
-                </div>
-                <div className="text-center sm:text-left sm:pl-5 mt-4 sm:mt-0 flex flex-col justify-center">
-                  <h3 className="text-xl font-semibold text-[#89CFF0] mb-2">{cert.title}</h3>
-                  <p className="text-white text-sm font-regular mb-2">ᯓ★ Issued by {cert.issuer} on {cert.date}</p>
-                  <a
-                    href={cert.link}
-                    className="text-[#89CFF0] text-sm font-semibold mb-2"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Verify 🡥
-                  </a>
-                  <div className="flex flex-wrap justify-center sm:justify-start gap-2 mt-5">
-                    {cert.skillsGained.map((skill, skillIndex) => (
-                      <span
-                        key={skillIndex}
-                        className="text-sm text-[#89CFF0] border border-[#89CFF0] rounded-full px-2 py-1"
-                      >
-                        {skill}
-                      </span>
-                    ))}
                   </div>
                 </div>
               </div>
