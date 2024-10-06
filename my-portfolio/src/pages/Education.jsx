@@ -1,12 +1,11 @@
 import React, { useEffect, useRef } from "react";
 import { VerticalTimeline, VerticalTimelineElement } from "react-vertical-timeline-component";
-import "react-vertical-timeline-component/style.min.css";
 import { timelineElements, certifications } from '../portfolio';
+import { LinearGradient } from 'react-text-gradients';
+import "react-vertical-timeline-component/style.min.css";
 import education from "../assets/education.png";
-import { FaExternalLinkAlt } from "react-icons/fa";
-import { LinearGradient } from 'react-text-gradients'
+import CertificationCard from '../components/CertificationCard'; 
 
-// Utility function to debounce the observer callback
 const debounce = (func, wait = 20) => {
   let timeout;
   return (...args) => {
@@ -62,7 +61,6 @@ const Education = () => {
   return (
     <div className="min-h-screen max-w-[1200px] my-20 mx-auto bg-[#000300] text-white">
       <div className="mx-4 md:mx-6 sm:mx-8 lg:mx-10 bg-[#1a1a1a] my-20 rounded-lg">
-
         <div className="flex items-center mx-10 pt-10">
           <LinearGradient gradient={['to left', '#ff68f0 , #89CFF0']} className="text-xl sm:text-2xl md:text-[20px] lg:text-[25px] font-bold text-[#89CFF0] text-center">
             Education
@@ -92,7 +90,7 @@ const Education = () => {
       </div>
 
       <div className="max-w-1000px mx-auto mt-20" ref={timelineRef}>
-        <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-center text-white mb-8">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl font-semibold text-center text-white mb-8">
           <span className="text-[#89CFF0]">Educational </span> Background 👩‍🏫
         </h2>
         <VerticalTimeline lineColor={lineColor}>
@@ -132,47 +130,14 @@ const Education = () => {
             </VerticalTimelineElement>
           ))}
         </VerticalTimeline>
-        
+
         <div className="mx-auto mt-20" ref={certificationsRef}>
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl font-semibold text-center text-white mb-8">
             Certifications 🎖️
           </h2>
           <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 my-10 mx-10">
             {certifications.map((cert, index) => (
-              <div
-                key={index}
-                className="certification-item bg-[#1a1a1a] rounded-lg shadow-lg transition-transform duration-300 group hover:scale-105 hover:border-[#89CFF0] hover:border-4"
-              >
-                <div className="relative">
-                  <img
-                    src={cert.cover}
-                    alt={`${cert.title} Certificate`}
-                    className="w-full h-auto object-cover rounded-t-lg"
-                  />
-                </div>
-                <div className="p-5 text-center">
-                  <h3 className="text-md sm:text-lg font-medium text-[#89CFF0] mb-2">{cert.title}</h3>
-                  <p className="text-xs sm:text-sm text-white font-regular mb-2">ᯓ★ Issued by {cert.issuer} on {cert.date}</p>
-                  <div className="flex justify-center space-x-5 text-sm text-white font-semibold tracking-wide">
-                    <a
-                      href={cert.link}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Verify
-                    </a>
-                    <a
-                      href={cert.certificate}
-                      className="flex items-center"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      View Certificate
-                      <FaExternalLinkAlt className="ml-2" />
-                    </a>
-                  </div>
-                </div>
-              </div>
+              <CertificationCard key={index} cert={cert} />
             ))}
           </div>
         </div>
