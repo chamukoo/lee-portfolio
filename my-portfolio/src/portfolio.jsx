@@ -13,6 +13,7 @@ import tcmes from "./assets/images/tcmes-logo.png";
 import html from './assets/skills-images/html.png';
 import css from './assets/skills-images/css.png';
 import js from './assets/skills-images/js.png';
+import ts from './assets/skills-images/ts.png';
 import react from './assets/skills-images/reactjs.png';
 import vite from './assets/skills-images/vite.png';
 import php from './assets/skills-images/php.png';
@@ -180,6 +181,11 @@ export const skills = [
         name: 'JavaScript', 
         type: 'tech stacks'
     },
+    {
+        logo: ts,
+        name: 'TypeScript',
+        type: 'tech stacks'
+    },
     { 
         logo: react, 
         name: 'React', 
@@ -198,11 +204,6 @@ export const skills = [
     { 
         logo: python, 
         name: 'Python', 
-        type: 'tech stacks'
-    },
-    { 
-        logo: php, 
-        name: 'PHP', 
         type: 'tech stacks'
     },
     { 
