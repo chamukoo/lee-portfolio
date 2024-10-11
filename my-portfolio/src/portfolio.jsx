@@ -2,6 +2,8 @@
 import { FaEnvelope, FaGithub, FaLinkedin, FaFacebook, FaInstagram } from "react-icons/fa";
 
 import profile from "./assets/profile.png";
+import education from "./assets/education.png";
+
 // For Timeline in Education Page
 import pup from "./assets/images/pup-logo.png"; 
 import olfu from "./assets/images/olfu-logo.png";
@@ -62,6 +64,23 @@ export const navLinks = [
     {
       name: "Portfolio",
       path: "/Portfolio"
+    },
+];
+
+
+
+export const introCard = [
+    {
+        title: "About",
+        image: profile,
+        subtitle: "Get To Know Me",
+        intro: "Hello! 👋 I'm Lee Anne, a dedicated Computer Engineering student passionate about both web development and design. Throughout my college journey, I’ve gained proficiency in tools such as HTML, CSS, JavaScript, ReactJS, and Tailwind CSS, allowing me to create dynamic, responsive web applications. I also use Figma for wireframing and prototyping, turning design concepts into reality. In addition to web development, I have a strong interest in networking, which led me to choose network administration as my college elective. My enthusiasm deepened through hands-on experience in Cisco courses, where I found learning about networks both engaging and rewarding. Currently, I’m expanding my skill set by diving into React Native for mobile application development. With this growing expertise, I aim to bridge the gap between web and mobile technologies, contributing to innovative projects that seamlessly combine design and functionality.",
+    },
+    {
+        title: "Education",
+        image: education,
+        subtitle: " Basic Qualification and Certifications",
+        intro: "Welcome to my Education page! 🙋‍♀️ Here, you'll find a summary of my academic qualifications and the journey that has shaped my career. Education is central to my growth, and I’m dedicated to continuous learning and staying updated with the latest advancements in technology. This page showcases the key milestones of my educational journey and my commitment to lifelong learning.",
     },
 ];
 

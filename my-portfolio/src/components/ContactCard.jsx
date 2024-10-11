@@ -2,7 +2,7 @@ import React from "react";
 
 const ContactCard = ({ contact }) => {
   return (
-    <div className="flex items-center mx-2 my-4 hover:bg-gradient-to-r from-[#ff68f0] to-[#89CFF0] p-2 rounded-lg transition-all duration-300">
+    <div className="flex items-center mx-2 my-4 hover:bg-gradient-to-r from-[#B3F6D8] to-[#52A7C1] p-2 rounded-lg transition-all duration-300">
       <div className="px-2">
         <img
           src={contact.logo}
