@@ -1,7 +1,8 @@
 import React from "react";
 import { skills, contacts } from "../portfolio"; // Import sections, social, and skills from portfolio
 import profile from "../assets/profile.png";
-import { LinearGradient } from 'react-text-gradients'
+import { LinearGradient } from 'react-text-gradients';
+import SkillsCard from "../components/SkillsCard"; 
 
 const About = () => {
   // Filter skills by type
@@ -42,46 +43,10 @@ const About = () => {
         </h2>
 
         {/* Tech Stacks Section */}
-        <div className="my-10 mx-auto w-full flex flex-col">
-          <div className="flex mb-5 items-center mx-10">
-            <hr className="flex border-t-5 border-[#89CFF0] mr-4 w-[100px]" />
-            <h3 className="text-2xl font-medium">• Tech Stacks</h3>
-          </div>
-          <div className="flex justify-center flex-wrap">
-            {techStacks.map((skill) => (
-              <div key={skill.name} className="flex flex-col items-center m-2 p-5">
-                <img
-                  src={skill.logo}
-                  alt={skill.name}
-                  className="w-[75px] h-[75px] transition-transform duration-300 hover:scale-110"
-                />
-                {/* Display skill name below the image */}
-                <p className="mt-3 text-white text-md font-regular">{skill.name}</p>
-              </div>
-            ))}
-          </div>
-        </div>
+        <SkillsCard skills={techStacks} title="Tech Stacks" />
 
         {/* Tools Section */}
-        <div className="my-10 mx-auto w-full flex flex-col">
-          <div className="flex mb-5 items-center mx-10">
-            <hr className="flex border-t-5 border-[#89CFF0] mr-4 w-[100px]" />
-            <h3 className="text-2xl font-medium">• Tools</h3>
-          </div>
-          <div className="flex justify-center flex-wrap">
-            {tools.map((skill) => (
-              <div key={skill.name} className="flex flex-col items-center m-2 p-5">
-                <img
-                  src={skill.logo}
-                  alt={skill.name}
-                  className="w-[75px] h-[75px] transition-transform duration-300 hover:scale-110"
-                />
-                {/* Display skill name below the image */}
-                <p className="mt-3 text-white text-md font-regular tracking-wider">{skill.name}</p>
-              </div>
-            ))}
-          </div>
-        </div>
+        <SkillsCard skills={tools} title="Tools" />
       </div>
 
       {/* Contacts Section */}
